@@ -55,11 +55,28 @@ var UTIL = {
 			Math.random() * hmax) + hmax;
 	},
 
+	/**
+	 * Iterates 2D arrays
+	 * @param y
+	 * @param x
+	 * @param callback
+	 */
 	forYX: function(y, x, callback) {
 		for (let _y = 0; _y < y; _y++) {
 			for (let _x = 0; _x < x; _x++) {
 				callback(_y, _x);
 			}
 		}
+	},
+
+	/**
+	 * Is pos in box?
+	 * @param pos x at 0 and y at 1
+	 * @param box x1, y1, x2, y2 (p1 must be above and left of p2)
+	 * @returns {boolean}
+	 */
+	inside: function(pos, box) {
+		return pos[0] >= box[0] && pos[0] < box[2] &&
+			pos[1] >= box[1] && pos[1] < box[3];
 	}
 };

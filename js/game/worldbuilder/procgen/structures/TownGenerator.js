@@ -2,20 +2,20 @@
  * Cuilds the basic terrain data from perlin noise.
  * @type {{build: TerrainBuilder.build}}
  */
-var TownBuilder = {
-	build: function(world) {
+var TownGenerator = {
+	generate: function(world) {
 		this.townSize = 20;
 		this.buildingSize = 8;
 
 		// TODO: break this stuff down into helper methods
-		var findGoodSpotForTown = function (map) {
-			var yOff = Math.floor(map.height / 4);
-			var yLen = Math.floor(map.height - map.height / 4);
-			var xOff = Math.floor(map.width / 4);
-			var xLen = Math.floor(map.width - map.width / 4);
+		var findGoodSpotForTown = function (world) {
+			var yOff = Math.floor(world.height / 4);
+			var yLen = Math.floor(world.height - world.height / 4);
+			var xOff = Math.floor(world.width / 4);
+			var xLen = Math.floor(world.width - world.width / 4);
 			for (var y = yOff; y < yLen; y++) {
 				for (var x = xOff; x < xLen; x++) {
-					if (map.map[y][x] > Math.floor(map.seaLevel * 1.5)) {
+					if (world.map[y][x] > Math.floor(world.seaLevel * 1.5)) {
 						return new Location(x, y);
 					}
 				}
@@ -74,7 +74,7 @@ var TownBuilder = {
 		};
 
 		this.build = function (map) {
-			this.center = findGoodSpotForTown(map);
+			this.center = findGoodSpotForTown(world.data);
 			this.makeBuildings(map.structures, this.center, this.buildingSize, this.townSize);
 		};
 	}

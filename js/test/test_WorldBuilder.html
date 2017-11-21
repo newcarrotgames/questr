@@ -4,14 +4,14 @@
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<meta content="utf-8" http-equiv="encoding">
 	<title>Questr Unit Tests: Test WorldBuilder</title>
-	<link href="../../../css/test.css" type="text/css" rel="stylesheet"/>
+	<link href="../../css/test.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
 
-<script src="../../../js/game/util/util.js"></script>
-<script src="../../../js/game/worldbuilder/Builder.js"></script>
-<script src="../../../js/game/worldbuilder/WorldBuilder.js"></script>
+<script src="../game/util/util.js"></script>
+<script src="../game/worldbuilder/Builder.js"></script>
+<script src="../game/worldbuilder/WorldBuilder.js"></script>
 <script>
 
 	console.clear();
@@ -23,13 +23,14 @@
 	// test constructor
 	let wb = new WorldBuilder()
 		.withDimensions(100, 100, 0)
+		.withSeaLevel(32)
 		.build();
 
 	console.log(wb);
 
 	// test simple builder
-	wb.runBuilder({
-		build: function (world) {
+	wb.runGenerator({
+		generate: function (world) {
 			console.log(world);
 		}
 	});
