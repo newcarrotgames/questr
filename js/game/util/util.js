@@ -53,5 +53,13 @@ var UTIL = {
 		let hmax = max / 2;
 		return Math.floor(
 			Math.random() * hmax) + hmax;
+	},
+
+	forYX: function(y, x, callback) {
+		for (let _y = 0; _y < y; _y++) {
+			for (let _x = 0; _x < x; _x++) {
+				callback(_y, _x);
+			}
+		}
 	}
 };

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+
+body {
+	background-color: #000000;
+	margin: 0;
+	font-family: 'Vollkorn SC', cursive;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
