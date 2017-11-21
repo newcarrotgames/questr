@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+
+body {
+	background-color: #000000;
+	margin: 0;
+	font-family: 'Vollkorn SC', cursive;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+#debug {
+	z-index: 999;
+	position: fixed;
+	bottom: 30px;
+	left: 20px;
+	font-size: 12px;
+	color: white;
+	background: rgba(0, 0, 0, 0.45);
+	border: 1px solid #333;
+	width: 40%;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.33);
+	-moz-box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.33);
+	box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.33);
+	display: none;
+}
+
+#debug-show-button {
+	z-index: 999;
+	position: fixed;
+	bottom: 40px;
+	left: 40px;
+	font-size: 12px;
+}
+
+#debug-text {
+	height: 90px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-bottom: 10px;
+}
+
+.dialog {
+	position: absolute;
+	background: #111;
+	color: #CCC;
+	padding: 30px 6px 60px;
+	border: 2px outset #CCC;
+	-webkit-box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.33);
+	-moz-box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.33);
+	box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.33);
+	max-width: 400px;
+}
+
+.dialog-content {
+	line-height: 1.2em;
+}
+
+.dialog-title-bar {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	vertical-align: middle;
+	background: hsla(185,20%,30%,1);
+	z-index: 2;
+}
+
+.dialog-title-bar p {
+	padding: 4px;
+	margin:  0;
+	white-space: nowrap;
+	font-size: 12px;
+}
+
+.dialog-buttons {
+	position: absolute;
+	height: 40px;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+}
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(255,0,0,0.8);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}

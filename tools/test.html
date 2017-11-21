@@ -1,0 +1,30 @@
+<html>
+
+<head>
+	<title>Questr Tools (right now, just a sprite sheet "explorer")</title>
+	<link href="../css/css.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<canvas id="canvas"></canvas>
+<div id="debug"></div>
+
+<script src="../js/game/util/util.js"></script>
+<script>
+	let all = [];
+	for (let i = 0; i < 10000; i++) {
+		let rn = UTIL.nrnd(10);
+		if (!all[rn])
+			all[rn] = 1;
+		else
+			all[rn]++;
+	}
+
+	for (let i = -10; i <= 10; i++) {
+		console.log(i, all[i]);
+	}
+
+</script>
+</body>
+
+</html>

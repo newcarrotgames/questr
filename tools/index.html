@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	<title>Questr Tools (right now, just a sprite sheet "explorer")</title>
+	<link href="../css/css.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<canvas id="canvas"></canvas>
+<div id="debug"></div>
+
+<script src="../js/game/util/graphics/sprites.js"></script>
+<script src="../js/game/ui/dialog.js"></script>
+<script>
+	function debug(msg) {
+		debugDiv.innerHTML = "<strong>" + msg + "</strong>";
+	}
+
+	var debugDiv = document.getElementById('debug');
+
+	function drawTiles(ctx, t) {
+		for (let i = 0; i < 32; i++) {
+			var x = 100 + i * 32;
+			ctx.fillRect(x, 100, 32, 32);
+			ctx.drawImage(sheet.f[t + i], x, 100);
+		}
+		debug(t);
+	}
+
+	// jewelry/gear: 2234
+	// food: 2561
+	// blood/stains: 3267
+	// characters: 3773
+	// animals: 4006
+	// cats ;) : 5416
+	// doors: 100 (671 has more)
+	// statues: 780
+	// trees: 845
+
+	var PRESETS = {
+		'0' : 0,
+		'1' : 4006,
+		'2' : 3773,
+		'3' : 2561,
+		'4' : 671,
+		'5' : 845
+	};
+
+	function start() {
+		let t = 0;
+		let canvas = document.getElementById("canvas");
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+		let ctx = canvas.getContext("2d");
+
+		drawTiles(ctx, t);
+
+		document.addEventListener('keydown', (event) => {
+			if (event.key === '+') {
+				t++;
+			} else if (event.key === '-') {
+				if (t > 0)
+					t--;
+			}
+
+			if (PRESETS[event.key] !== undefined) {
+				t = PRESETS[event.key];
+			}
+
+			drawTiles(ctx, t);
+		}, false);
+
+		new Dialog("0: back to start<br/>1: animals<br/>2: characters<br/>3: food<br/>4: doors<br/>5: trees<br/>", "Controls", 800, 400);
+	}
+
+	let sheet = new SpriteSheet("../img/rpg.png", 32, 32, start);
+
+</script>
+</body>
+
+</html>
