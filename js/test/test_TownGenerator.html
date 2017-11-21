@@ -33,8 +33,11 @@
 	world.runGenerator(TerrainGenerator);
 	world.runGenerator(TownGenerator);
 	let renderer = new Render([world], view);
-	renderer.run();
-	console.log("test end");
+
+	sheet = new SpriteSheet("../../img/rpg.png", 32, 32, function() {
+		renderer.run();
+		console.log("test end");
+	});
 
 	document.addEventListener('keydown', (event) => {
 		if (event.keyCode === 37) { // left arrow

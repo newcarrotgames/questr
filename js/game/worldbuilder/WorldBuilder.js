@@ -22,20 +22,24 @@ function WorldBuilder() {
 					[0, 0, this.height, this.width]))
 				return;
 			let w = this.data[offY][offX];
-
 			if (w.structure) {
-				color = "#CCCCCC";
-			} else  if (w.height < this.seaLevel) {
-				color = "#0000" + UTIL.hex(Math.floor(w.height / 5) + 128, 2);
+				ctx.drawImage(sheet.f[920],
+					x * view.size,
+					y * view.size);
 			} else {
-				color = "#00" + UTIL.hex(w.height, 2) + "00";
+				let color;
+				if (w.height < this.seaLevel) {
+					color = "#0000" + UTIL.hex(Math.floor(w.height / 5) + 190, 2);
+				} else {
+					color = "#00" + UTIL.hex(w.height + 64, 2) + "00";
+				}
+				ctx.fillStyle = color;
+				ctx.fillRect(
+					x * view.size,
+					y * view.size,
+					view.size,
+					view.size);
 			}
-			ctx.fillStyle = color;
-			ctx.fillRect(
-				x * view.size,
-				y * view.size,
-				view.size,
-				view.size);
 		}.bind(this));
 	};
 }
