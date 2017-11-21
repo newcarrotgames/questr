@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e42a6e4-8974-4fd6-8154-8e42a28d81c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/game/worldbuilder/procgen/terrain/TerrainGenerator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/test/test_TerrainGenerator.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/test/test_TownGenerator.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/game/worldbuilder/terrain/TerrainBuilder.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/abstract/view.js" afterPath="$PROJECT_DIR$/js/game/abstract/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/util/util.js" afterPath="$PROJECT_DIR$/js/game/util/util.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/worldbuilder/WorldBuilder.js" afterPath="$PROJECT_DIR$/js/game/worldbuilder/WorldBuilder.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/game/worldbuilder/structures/TownBuilder.js" afterPath="$PROJECT_DIR$/js/game/worldbuilder/procgen/structures/TownGenerator.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/test/worldbuilder/test_WorldBuilder.html" afterPath="$PROJECT_DIR$/js/test/test_WorldBuilder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/worldbuilder/procgen/structures/TownGenerator.js" afterPath="$PROJECT_DIR$/js/game/worldbuilder/procgen/structures/TownGenerator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/worldbuilder/procgen/terrain/TerrainGenerator.js" afterPath="$PROJECT_DIR$/js/game/worldbuilder/procgen/terrain/TerrainGenerator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/test/test_TerrainGenerator.html" afterPath="$PROJECT_DIR$/js/test/test_TerrainGenerator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/test/test_TownGenerator.html" afterPath="$PROJECT_DIR$/js/test/test_TownGenerator.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +21,18 @@
       <file leaf-file-name="WorldBuilder.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/game/worldbuilder/WorldBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="266">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/game/util/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="63" column="4" lean-forward="false" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -36,8 +41,18 @@
       <file leaf-file-name="test_WorldBuilder.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/test/test_WorldBuilder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state relative-caret-position="442">
+              <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TerrainGenerator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/game/worldbuilder/procgen/terrain/TerrainGenerator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -46,8 +61,8 @@
       <file leaf-file-name="test_TerrainGenerator.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/test/test_TerrainGenerator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="493">
+              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -56,8 +71,8 @@
       <file leaf-file-name="test_TownGenerator.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/test/test_TownGenerator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+            <state relative-caret-position="419">
+              <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -66,8 +81,8 @@
       <file leaf-file-name="TownGenerator.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/game/worldbuilder/procgen/structures/TownGenerator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" column="10" lean-forward="true" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
+            <state relative-caret-position="538">
+              <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -78,16 +93,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/game/worldbuilder/life/player.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -113,16 +118,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="52" column="43" lean-forward="true" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -143,7 +138,19 @@
       <find>seaLevel</find>
       <find>sheet</find>
       <find>findGoodSpotForTown</find>
+      <find>location</find>
+      <find>loc</find>
+      <find>.x</find>
+      <find>boxCheck</find>
+      <find>var</find>
+      <find>(x, y)</find>
+      <find>.forYX</find>
+      <find>forYX</find>
     </findStrings>
+    <replaceStrings>
+      <replace>lat</replace>
+      <replace>let</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -165,12 +172,13 @@
         <option value="$PROJECT_DIR$/js/game/util/graphics/render.js" />
         <option value="$PROJECT_DIR$/js/game/util/util.js" />
         <option value="$PROJECT_DIR$/js/test/test_WorldBuilder.html" />
-        <option value="$PROJECT_DIR$/js/test/test_TerrainGenerator.html" />
-        <option value="$PROJECT_DIR$/js/game/worldbuilder/WorldBuilder.js" />
         <option value="$PROJECT_DIR$/js/test/test_ViewZoom.html" />
         <option value="$PROJECT_DIR$/js/game/abstract/view.js" />
-        <option value="$PROJECT_DIR$/js/test/test_TownGenerator.html" />
+        <option value="$PROJECT_DIR$/js/game/worldbuilder/procgen/terrain/TerrainGenerator.js" />
         <option value="$PROJECT_DIR$/js/game/worldbuilder/procgen/structures/TownGenerator.js" />
+        <option value="$PROJECT_DIR$/js/game/worldbuilder/WorldBuilder.js" />
+        <option value="$PROJECT_DIR$/js/test/test_TerrainGenerator.html" />
+        <option value="$PROJECT_DIR$/js/test/test_TownGenerator.html" />
       </list>
     </option>
   </component>
@@ -442,12 +450,12 @@
       <option name="presentableId" value="Default" />
       <updated>1511285120977</updated>
       <workItem from="1511285126734" duration="6654000" />
-      <workItem from="1511296937701" duration="5454000" />
+      <workItem from="1511296937701" duration="6883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12108000" />
+    <option name="totallyTimeSpent" value="13537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3831" y="-9" width="1938" height="1058" extended-state="6" />
@@ -644,22 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/game/util/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="78" column="53" lean-forward="true" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/game/worldbuilder/procgen/terrain/TerrainGenerator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/game/questr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -716,42 +708,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/test/test_WorldBuilder.html">
+    <entry file="file://$PROJECT_DIR$/js/game/util/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <caret line="63" column="4" lean-forward="false" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/test/test_TerrainGenerator.html">
+    <entry file="file://$PROJECT_DIR$/js/game/worldbuilder/procgen/terrain/TerrainGenerator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/test/test_WorldBuilder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/game/worldbuilder/WorldBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="266">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/test/test_TerrainGenerator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/test/test_TownGenerator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        <state relative-caret-position="419">
+          <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/game/worldbuilder/procgen/structures/TownGenerator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="10" lean-forward="true" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
+        <state relative-caret-position="538">
+          <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
           <folding />
         </state>
       </provider>

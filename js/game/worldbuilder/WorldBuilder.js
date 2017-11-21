@@ -14,7 +14,7 @@ function WorldBuilder() {
 	};
 
 	this.obj.render = function (ctx, view) {
-		UTIL.forYX(this.height, this.width, function(x, y) {
+		UTIL.forYX(this.height, this.width, function(y, x) {
 			let offX = x + view.x;
 			let offY = y + view.y;
 			if (!UTIL.inside(
@@ -22,7 +22,10 @@ function WorldBuilder() {
 					[0, 0, this.height, this.width]))
 				return;
 			let w = this.data[offY][offX];
-			if (w.height < this.seaLevel) {
+
+			if (w.structure) {
+				color = "#CCCCCC";
+			} else  if (w.height < this.seaLevel) {
 				color = "#0000" + UTIL.hex(Math.floor(w.height / 5) + 128, 2);
 			} else {
 				color = "#00" + UTIL.hex(w.height, 2) + "00";
@@ -51,7 +54,7 @@ WorldBuilder.prototype.withDimensions = function (width, height, depth) {
 	this.obj.width = width;
 	this.obj.height = height;
 	this.obj.depth = depth;
-	UTIL.forYX(height, width, (x, y) => {
+	UTIL.forYX(height, width, (y, x) => {
 		if (!this.obj.data[y])
 			this.obj.data[y] = [];
 		this.obj.data[y][x] = {};

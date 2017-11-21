@@ -25,10 +25,10 @@
 	let width = 100;
 	let height = 100;
 	let size = 32;
-	let view = new View(size, 10, 10);
+	let view = new View(size, 23, 37);
 	let world = new WorldBuilder()
 		.withDimensions(width, height, 0)
-		.withSeaLevel(64)
+		.withSeaLevel(16)
 		.build();
 	world.runGenerator(TerrainGenerator);
 	world.runGenerator(TownGenerator);

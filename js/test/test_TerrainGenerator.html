@@ -27,7 +27,7 @@
 	let view = new View(size, 10, 10);
 	let world = new WorldBuilder()
 		.withDimensions(width, height, 0)
-		.withSeaLevel(64)
+		.withSeaLevel(16)
 		.build();
 	world.runGenerator(TerrainGenerator);
 	let renderer = new Render([world], view);
