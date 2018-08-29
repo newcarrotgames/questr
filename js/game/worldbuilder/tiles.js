@@ -68,6 +68,7 @@ var Tiles = function (width, height, size, seaLevel, eventService) {
 
 	// and subscribe to it
 	this.eventService.subscribe("MOVE", function (event) {
+		debug();
 		event.target.location = event.data;
 	});
 };

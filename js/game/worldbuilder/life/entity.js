@@ -1,5 +1,6 @@
 function EntityBuilder(obj) {
 	Builder.call(this);
+	console.log(this);
 	if (obj) {
 		this.obj = obj;
 	}
@@ -51,6 +52,7 @@ function EntityBuilder(obj) {
 	};
 
 	this.finalize = function () {
+		console.log("finalize");
 		this.obj.render = function (ctx, view) {
 			let sx = (this.location.x - view.x) * this.img.width;
 			let sy = (this.location.y - view.y) * this.img.height;
@@ -58,3 +60,5 @@ function EntityBuilder(obj) {
 		};
 	};
 }
+
+EntityBuilder.prototype = Object.create(Builder.prototype);
