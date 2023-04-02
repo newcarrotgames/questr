@@ -51,3 +51,5 @@ docs/_build/
 
 lib64
 pyvenv.cfg
+
+run.sh

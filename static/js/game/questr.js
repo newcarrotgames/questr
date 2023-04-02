@@ -25,10 +25,7 @@ document.querySelector('#debug-show-button')
 	});
 
 let sheet;
-let initDialogMessage = "Welcome to <strong>Questr</strong>!<br/><br/>" +
-	"I'm developing this here in the hopes of creating a system " +
-	"capable of procedurally generating interesting RPGish quests!" +
-	"<br/><br/>Ohhhh boy!";
+let initDialogMessage = "Welcome to <strong>gpthack</strong>!<br/><br/>";
 
 (function () {
 	console.clear();
@@ -40,13 +37,13 @@ let initDialogMessage = "Welcome to <strong>Questr</strong>!<br/><br/>" +
 	function start() {
 		console.log("starting start");
 		let events = new EventService();
-		let t = new Tiles(1000, 1000, 32, 64, events);
-		let town = new TownBuilder();
-		t.runBuilder(town);
+		let t = new Tiles(64, 64, 32, events);
+		// let town = new TownBuilder();
+		// t.runBuilder(town);
 		let i = new Input();
-		let pc = new Player(t, i, town.center.x, town.center.y, sheet.f[3863], events);
-		t.view.x = town.center.x - Math.floor(t.view.halfWidth);
-		t.view.y = town.center.y - Math.floor(t.view.halfHeight);
+		let pc = new Player(t, i, 5, 5, sheet.f[3863], events);
+		t.view.x = 0;
+		t.view.y = 0;
 		let es = [t, pc];
 
 		// for (let i = 0; i < 10; i++) {
